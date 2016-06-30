@@ -3,8 +3,30 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Ejercicios To Do App</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="main.css">
 </head>
 <body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div id="cuadro">
+					<textarea class="form-control" rows="3" id="texto"></textarea>
+					<button type="button" class="btn btn-primary" id="botonTexto">Añadir Texto</button>
+					<button type="button" class="btn btn-primary" onclick= "eliminarTodo()"> Eliminar Todo</button>
+				</div>
+				<div>
+					<ul id="lista">
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 	
+
+
+
+
+	<script src="todo.js"></script>
 </body>
 </html>
