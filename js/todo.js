@@ -12,13 +12,6 @@ var cambiar = document.getElementById('color');
 
 //FUNCTIONS
 
-
-function elminarItem(evento){
-	console.log('elminarItem');
-    var li = evento.target.parentNode;
-    lista.removeChild(li);
-} 
-
 function agregarTexto(){
 	var letras = texto.value ;
 	var li = document.createElement('li');
@@ -34,9 +27,16 @@ function agregarTexto(){
 		li.appendChild(p);
 		li.appendChild(button);
 		lista.appendChild(li);
+		texto.value="";
 		}
 	
 }
+
+function elminarItem(evento){
+	console.log('elminarItem');
+    var li = evento.target.parentNode;
+    lista.removeChild(li);
+} 
 
 function eliminarTodo(){
 	lista.innerHTML = "";
