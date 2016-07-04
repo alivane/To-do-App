@@ -18,7 +18,6 @@ body{
 header{
 	background-color:#F0F0F0;
 	color:#6B6B6B;
-	
 }
 header .btn{
 	color:white;
@@ -52,6 +51,12 @@ ul li{
 	padding: 20px;
 	margin-top: 10px;
 	font-size: 20px;
+}
+
+.tachar {
+	color:red;
+	text-decoration:line-through;
+	cursor: pointer;
 }
 span:hover{
 	color:red;

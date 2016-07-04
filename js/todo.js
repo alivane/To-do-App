@@ -18,6 +18,7 @@ function agregarTexto(){
 	var span = document.createElement('span');
 	var p = document.createTextNode( letras );
 	var button = document.createElement('button');
+	span.addEventListener('click',tachar);
 	if(letras == ""){
 		texto.setAttribute("placeholder","Añade una tarea VALIDA !!!");
 	}else{
@@ -33,6 +34,9 @@ function agregarTexto(){
 		texto.value="";
 		}
 	
+}
+function tachar(){
+	this.setAttribute('class','tachar');
 }
 function elminarItem(evento){
 	console.log('elminarItem');
