@@ -15,6 +15,7 @@ var cambiar = document.getElementById('color');
 function agregarTexto(){
 	var letras = texto.value ;
 	var li = document.createElement('li');
+	var span = document.createElement('span');
 	var p = document.createTextNode( letras );
 	var button = document.createElement('button');
 	if(letras == ""){
@@ -24,16 +25,15 @@ function agregarTexto(){
 		button.addEventListener("click", elminarItem);
 		var buttonTexto = document.createTextNode('x');
 		button.appendChild(buttonTexto);
-		li.appendChild(p);
+		span.appendChild(p);
+		li.appendChild(span);
 		li.appendChild(button);
 		lista.appendChild(li);
 		texto.setAttribute("placeholder","Ingresa una tarea");
 		texto.value="";
-
 		}
 	
 }
-
 function elminarItem(evento){
 	console.log('elminarItem');
     var li = evento.target.parentNode;
