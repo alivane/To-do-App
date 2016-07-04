@@ -4,18 +4,38 @@
 	<meta charset="UTF-8">
 	<title>Ejercicios To Do App</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body id="color">
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1>LISTA DE TAREAS
+					</h1>
+					<button type="button" class="btn cambiarFondo"id="fondo">Defecto</button>
+ 					<button type="button" class="btn cambiarFondo1"id="fondo1">Fondo 1</button>
+					<button type="button" class="btn cambiarFondo2"id="fondo2">Fondo 2</button>
+				</div>
+			</div>
+		</div>
+	</header>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
 				<div id="cuadro">
-					<textarea class="form-control" rows="3" id="texto"></textarea>
-					<button type="button" class="btn btn-primary" id="botonTexto">Añadir Texto</button>
-					<button type="button" class="btn btn-primary" onclick= "eliminarTodo()"> Eliminar Todo</button>
+					<input type="text" id="texto" placeholder="Ingresa Una Tarea">
+					<button type="button" class="btn btn-primary" id="botonTexto">
+					<i class="fa fa-plus" aria-hidden="true"></i>
+					Añadir Texto</button>
+					<button type="button" class="btn btn-danger" onclick= "eliminarTodo()"> X Eliminar Todo</button>
 				</div>
 				<div>
+					<h2>Mis Tareas
+					<i class="fa fa-file-text-o" aria-hidden="true"></i></h2>
 					<ul id="lista">
 					</ul>
 				</div>
@@ -27,6 +47,6 @@
 
 
 
-	<script src="todo.js"></script>
+	<script src="js/todo.js"></script>
 </body>
 </html>
