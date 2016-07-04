@@ -27,7 +27,9 @@ function agregarTexto(){
 		li.appendChild(p);
 		li.appendChild(button);
 		lista.appendChild(li);
+		texto.setAttribute("placeholder","Ingresa una tarea");
 		texto.value="";
+
 		}
 	
 }
